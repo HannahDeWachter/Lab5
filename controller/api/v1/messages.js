@@ -80,7 +80,7 @@ const remove = (req, res) => {
         if (!err) {
             res.json({
                 "status": "succes",
-                "message": "DELETING a message with ID " + req.params.id
+                "message": "DELETED a message with ID " + req.params.id
             });
         }
     });
