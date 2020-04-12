@@ -10,7 +10,6 @@ const getAllMessages = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": docs
             });
         }
@@ -26,7 +25,6 @@ const getIdMessage = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": docs
             });
         }
@@ -45,7 +43,6 @@ const create = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": doc
             });
         }
@@ -62,7 +59,6 @@ const update = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": doc
             });
         }
@@ -79,7 +75,6 @@ const remove = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": "DELETED a message with ID " + req.params.id
             });
         }
@@ -95,7 +90,6 @@ const getUserMessages = (req, res) => {
         }
         if (!err) {
             res.json({
-                "status": "succes",
                 "message": docs
             });
         }
