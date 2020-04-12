@@ -80,7 +80,7 @@ const remove = (req, res) => {
         }
     });
 }
-const getUserMessages = (req, res) => {
+/* const getUserMessages = (req, res) => {
     Message.find({ "user": req.params.username }, (err, docs) => {
         if (err) {
             res.json({
@@ -94,7 +94,7 @@ const getUserMessages = (req, res) => {
             });
         }
     });
-}
+} */
 
 module.exports.getAllMessages = getAllMessages;
 module.exports.getIdMessage = getIdMessage;
