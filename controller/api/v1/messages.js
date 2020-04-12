@@ -50,7 +50,7 @@ const create = (req, res) => {
 }
 // bron: https://mongoosejs.com/docs/api.html#model_Model.findOneAndUpdate
 const update = (req, res) => {
-    Message.findOneAndUpdate({ _id: req.params.id }, { text: req.body.text }, (err, doc) => {
+    Message.findOneAndUpdate({ _id: req.params.id }, { text: req.body.message.text }, (err, doc) => {
         if (err) {
             res.json({
                 "status": "error",
